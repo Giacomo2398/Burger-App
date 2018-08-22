@@ -1,15 +1,15 @@
 <div class="container">
-    <div class ="row justify-content-center">
+    <div class ="row justify-content-center header">
+        <img id="logo" width="200px" height="200px"src="/images/Good_burger_logo.jpg">
         <div class="col-align-self-center">
-            <h1>Create and Eat Your Burgers!</h1>
+            <h1 class="title">Welcome To Good Burger!</h1>
+            <h4 class="title">Home of the Good Burger, can I take your order?</h4>
         </div>
     </div>
     <br>
     <div class="row">
         <div class="col-lg-4">
-            <div class="col-align-self-center">
-            </div>
-            <div>
+            <div id="menu">
                 <h2>Menu</h2>
                 <div>
                     <ul>
@@ -20,20 +20,25 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="row">
-                <h2> Add your own burger!</h1>
+        <div class="col-lg-4" >
+            <h2 id="addBurgers"> Add your own burger!</h1>
+            <div class="row" id="addBurger">
+                <form class="create-burger">
                     <div class="form-group">
-                        <label for="name">Burger Name:</label>
-                        <input type="text" id="name" name="burger_name">
+                        <label for="burger_name">Burger Name:</label>
+                        <input type="text" id="name" name="burger_name" placeholder="Add your burger!">
                     </div>
-                    <button class="create-burger" type="submit" >Add burger!</button>
+                    <img id="kelOrder" width="350px" height="200px;"src="/images/Kel.jpg">
+                    <br>
+                    <br>
+                    <button type="submit">Add burger!</button>
+                </form>
             </div>
         </div>
         <div class="col-lg-4">
-            <div>
+            <div id="eaten">
                 <h2>Eaten Burgers</h2>
-                <ul>
+                <ul class="list-unstyled" id="eatenBurgers">
                     {{#each burgers}} {{#if this.devoured}}
                     <li>
                         {{this.id}} - {{this.burger_name}}

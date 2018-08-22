@@ -1,9 +1,9 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const exphbs = require("express-handlebars");
-const routes = require("./controllers/burgers_controller.js");
+var express = require("express");
+var bodyParser = require("body-parser");
+var exphbs = require("express-handlebars");
+var routes = require("./controllers/burgers_controller.js");
 
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8000;
 var app = express();
 
 app.use(express.static("public"));

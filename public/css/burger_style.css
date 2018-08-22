@@ -1,0 +1,67 @@
+body{
+    background-image:url('../images/background.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col-align-self-center {
+    font-family: Burger;
+    background-color: lightgoldenrodyellow;
+    border-color:black;
+    padding-left:10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width:80%;
+    height:200px;
+    border-left:none;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+}
+
+.title{
+    padding-top:20px;
+    text-align:center;
+    font-size:45px;
+    color:black;
+}
+
+#logo{
+    border: 2px solid black;
+    border-radius: 5px;
+    border-right:none;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+}
+
+
+#menu, #addBurgers, #eaten {
+    font-family: Burger;
+    align-content: center;
+    background-color:grey;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#addBurger {
+    font-family: Burger;
+    background-color:lightgoldenrodyellow;
+    height:400px;
+    font-size:25px;
+    padding-left:15px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#eatenBurgers{
+    font-family: Burger;
+    background-color:lightgoldenrodyellow;
+    height:auto;
+    font-size:25px;
+    padding-left:15px;
+}
+
+#create {
+    position:relative;
+    left:100px;
+}

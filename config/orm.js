@@ -12,7 +12,6 @@ let orm = {
     },
     insertOne: function(table, vals, cb) {
       let queryString = "INSERT INTO " + table + "(burger_name) VALUES (?)";
-  
       connection.query(queryString, vals, function(err, result) {
         if (err) {
           throw err;
@@ -20,7 +19,7 @@ let orm = {
         cb(result);
       });
     },
-    updateOne: function(table, objColVals, condition, cb) {
+    updateOne: function(table, condition, cb) {
       let queryString = "UPDATE " + table + " SET devoured = 1 WHERE " + condition;
       connection.query(queryString, function(err, result) {
         if (err) {
@@ -36,7 +35,9 @@ let orm = {
   
       console.log(queryString);
       connection.query(queryString, function (err, result) {
-        if (err) throw err;
+        if (err) {
+          throw err;
+        }
         cb(result);
       });
     }

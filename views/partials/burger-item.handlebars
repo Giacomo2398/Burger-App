@@ -1,10 +1,10 @@
 <li class="card" style="width: 17rem;">
-    <img class="card-img-top"  src="/assets/images/burger.jpg"> 
+    <img class="card-img-top" width= "270px" height="150px"name="burger" src="images/burger.jpg">
         <div class="card body">
-            <h5 class="card-title">{{this.id}} - {{this.burger_name}}</h5>
+            <h4 class="card-title">{{this.id}} - {{this.burger_name}}</h4>
             <div class="row">
             	<div class="col-sm-1"></div>
-				<button type="submit" class="eat" data-id="{{this.id}}" data-newEat="{{devoured}}">
+				<button type="submit" class="eat" data-id="{{this.id}}">
 					{{#if devoured}}{{else}}Eat Burger{{/if}}
 				</button> 
             	<div class="col-sm-1"></div>
